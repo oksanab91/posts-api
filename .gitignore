@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/PostsAPI/DesignTimeBuild/.dtbcache.v2
+/.vs/PostsAPI/v16/.suo
+/.vs/PostsAPI/config/applicationhost.config

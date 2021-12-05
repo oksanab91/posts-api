@@ -22,9 +22,9 @@ namespace PostsAPI.Controllers
         }
 
         // GET: api/<PostsController/name/1>
-        [HttpGet("{authorName}/{pageNumber}")]        
+        [HttpGet("{authorName}/{pageNumber}")]
         public IEnumerable<PostDTO> GetFiltered(string authorName, int? pageNumber)
-        {            
+        {
             return ReadPostsData(pageNumber ?? 1, authorName);
         }
 
@@ -67,7 +67,7 @@ namespace PostsAPI.Controllers
         private static void FillPostsData()
         {
             var rng = new Random();
-            postsData = Enumerable.Range(1, 50).Select(index => new Post
+            postsData = Enumerable.Range(1, 500).Select(index => new Post
             {
                 Id = index.ToString(),
                 Author = "Author " + index.ToString(),
